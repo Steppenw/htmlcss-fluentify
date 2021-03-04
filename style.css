@@ -7,16 +7,25 @@
 .row {}
 
 .container {
-  width: 80%;
+  width: 82%;
   margin: auto;
 }
 
+/*header*/
+header {
+  line-height: 80px;
+}
+
 .header-left {
-  width: 65%
+  width: 60%
+}
+
+.v-align {
+  vertical-align: middle;
 }
 
 .header-right {
-  width: 35%;
+  width: 40%;
 }
 
 .f-left {
@@ -27,13 +36,112 @@
   display: inline-block;
 }
 
-.header-left nav ul li {
+.header-left nav ul {
+  margin-left: 40px;
+}
+
+header ul li {
   display: inline-block;
 }
 
-.header-left nav ul li a {
+header ul li a {
   color: white;
   text-decoration: none;
+  font-variant: small-caps;
+  font-size: 15px;
+  padding: 15px 15px 15px 0;
+}
+
+.header-right ul li {
+  float: right;
+}
+
+.header-right ul li a {
+  padding: 5px 15px;
+  margin-left: 15px;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.whitebtn {
+  border: 1px solid white;
+}
+
+.greenbtn {
+  background-color: yellowgreen;
+}
+
+/*intro*/
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro div.absolute {
+  width: 60%;
+}
+
+.intro div.absolute h3 {
+  margin-bottom: 8px;
+}
+
+/*main*/
+/*main-top*/
+.main-top {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.main-top section {
+  width: 31%;
+}
+
+.main-top section.marg {
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+.main-top section .fig {
+  height: 150px;
+}
+
+.main-top section .fig.fig-left {
+  background: url('img/profile.svg') no-repeat center;
+}
+
+.main-top section .fig.fig-middle {
+  background: url('img/computer.svg') no-repeat center;
+}
+
+.main-top section .fig.fig-right {
+  background: url(img/doc.svg) no-repeat center;
+}
+
+.main-top section * {
+  margin-bottom: 30px;
+}
+
+.main-top section h3 {
+  color: rgb(139, 194, 32);
+}
+
+.hr20 {
+  width: 20%;
+}
+
+.hr98 {
+  width: 98%;
 }
 /*Utilities*/
 .clearfix::after {
@@ -42,12 +150,21 @@
   clear: both;
 }
 
-.border {
+/*.border {
   border: 1px solid black;
-}
+}*/
 
 .bg-blue {
   background-color: blue;
+}
+
+.bg-intro {
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+}
+
+.bg-main {
+  background-color: white;
 }
 
 .h-50 {
@@ -62,6 +179,10 @@
   height: 100px;
 }
 
+.h-120 {
+  height: 120px;
+}
+
 .h-400 {
   height: 400px;
 }
@@ -72,4 +193,8 @@
 
 .white {
   color: white;
+}
+
+.grey {
+  color: grey;
 }
