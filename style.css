@@ -40,7 +40,7 @@ header {
   margin-left: 40px;
 }
 
-header ul li {
+.header-left ul li {
   display: inline-block;
 }
 
@@ -50,6 +50,10 @@ header ul li a {
   font-variant: small-caps;
   font-size: 15px;
   padding: 15px 15px 15px 0;
+}
+
+.header-right ul {
+  list-style-type: none;
 }
 
 .header-right ul li {
@@ -71,6 +75,16 @@ header ul li a {
 
 .greenbtn {
   background-color: yellowgreen;
+}
+
+/*hero*/
+.hero img {
+  height: 100%;
+  transform: translateX(20%);
+}
+
+.hero h3 {
+  color: white;
 }
 
 /*intro*/
@@ -99,17 +113,16 @@ header ul li a {
 /*main*/
 /*main-top*/
 .main-top {
-  text-align: center;
   padding-top: 30px;
 }
 
-.main-top section {
+.main-top section.w-31 {
   width: 31%;
+  margin-right: 3.5%;
 }
 
-.main-top section.marg {
-  margin-left: 3.5%;
-  margin-right: 3.5%;
+.main-top section:last-child {
+  margin-right: 0;  
 }
 
 .main-top section .fig {
@@ -136,6 +149,10 @@ header ul li a {
   color: rgb(139, 194, 32);
 }
 
+hr {
+  margin: auto;
+}
+
 .hr20 {
   width: 20%;
 }
@@ -143,6 +160,47 @@ header ul li a {
 .hr98 {
   width: 98%;
 }
+
+/*main-bott*/
+
+/*footer*/
+footer {
+  height: 140px;
+  line-height: 140px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  float: right;
+}
+
+footer ul li a, div.fixed a {
+  padding: 15px 15px;
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 15px;
+}
+
+footer ul li label {
+  margin-right: 10px;;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 8px;
+  right: 200px;
+}
+
+div.fixed a {
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
 /*Utilities*/
 .clearfix::after {
   content: "";
@@ -154,13 +212,16 @@ header ul li a {
   border: 1px solid black;
 }*/
 
-.bg-blue {
+.txt-cen {
+  text-align: center;
+}
+
+.bg-header {
   background-color: blue;
 }
 
-.bg-intro {
+.bg-intro, .bg-footer {
   background-color: rgb(211, 211, 211);
-  text-align: center;
 }
 
 .bg-main {
@@ -187,8 +248,15 @@ header ul li a {
   height: 400px;
 }
 
+.h-450 {
+  height: 450px;
+}
+
 .h-vh {
   height: 100vh;
+}
+.w-50 {
+  width: 50%;
 }
 
 .white {

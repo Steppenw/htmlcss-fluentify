@@ -9,12 +9,12 @@
 </head>
 <body>
 
-  <div class="row bg-blue white">
+  <div class="row bg-header white">
     <div class="container border">
 
       <header class="h-80 border clearfix">
 
-        <div class="header-left f-left h-80 v-align">
+        <div class="header-left f-left h-80">
           <img class="v-align" src="img/logo.svg" alt="logo" />
           <nav>
             <ul>
@@ -35,14 +35,13 @@
 
       </header>
 
-      <div class="hero h-400">
-        
+      <div class="hero border h-400 relative">
       </div>
 
     </div>
   </div>
 
-  <div class="row bg-intro">
+  <div class="row bg-intro txt-cen">
     <div class="container border">
 
       <div class="intro h-120 relative">
@@ -58,39 +57,56 @@
   <div class="row bg-main border">
     <main class="container">
 
-      <div class="main-top clearfix">
-        <section class="border f-left">
+      <div class="main-top border clearfix txt-cen">
+        <section class="border f-left w-31">
           <div class="fig fig-left"></div>
           <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <div class="relative">
-            <div class="hr20 absolute center"><hr /></div>
-          </div>
+          <hr class="hr20">
           <p class="grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quia voluptatibus distinctio provident impedit vero totam laudantium ratione mollitia labore, tempora eligendi maiores exercitationem delectus nobis eius.</p>
         </section>
-        <section class="border f-left marg">
+        <section class="border f-left w-31">
           <div class="fig fig-middle"></div>
           <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <div class="relative">
-            <div class="hr20 absolute center"><hr /></div>
-          </div>
+          <hr class="hr20">
           <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia ullam eaque, voluptatum eius itaque. Sint optio, recusandae magni aut nobis, nostrum.</p>
         </section>
-        <section class="border f-left">
+        <section class="border f-left w-31">
           <div class="fig fig-right"></div>
           <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <div class="relative">
-            <div class="hr20 absolute center"><hr /></div>
-          </div>
+          <hr class="hr20">
           <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia ullam eaque, voluptatum eius itaque. Sint optio.
         </section>
       </div>
 
-      <div class="relative">
-        <div class="hr98 absolute center"><hr /></div>
-      </div>
+      <!--<hr class="hr98">
+
+      <div class="main-bott border clearfix">
+        <section class="border f-left w-50"></section>
+        <section class="border f-left w-50"></section>
+      </div>-->
 
     </main>
   </div>
+
+  <footer class="bg-footer border">
+    <div class="container border">
+      <h2 class="f-left">Struttura un piano</h2>
+      <ul>
+        <li>
+          <a class="button greenbtn" href="#">visualizza il tuo piano</a>
+        </li>
+        <li>
+          <label for="select">Sono</label>
+          <select id="select" name="select">
+            <option value="uomo">Uomo</option>
+            <option value="donna">Donna</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="fixed"><a class="button greenbtn" href="#">help</a></div>
 
 </body>
 </html>
